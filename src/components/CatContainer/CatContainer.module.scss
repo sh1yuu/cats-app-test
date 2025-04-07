@@ -1,0 +1,19 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	min-height: 100vh;
+	background-color: #ffffff;
+	padding: 20px;
+
+	// Изменяем порядок элементов
+	> :first-child {
+		order: 2; // CatCard будет вторым
+	}
+
+	> :last-child {
+		order: 1; // CatControls будет первым
+	}
+}
